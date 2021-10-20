@@ -1,3 +1,6 @@
 function hello(name) {
- return "hello " + name;
+    var name = "Dawn";
+    return ["Hello " + name + "!"];
 }
+
+hello();
