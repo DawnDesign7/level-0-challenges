@@ -1,8 +1,9 @@
 function evenOrOdd(i) {
+    var i = prompt("Insert number to check if it's odd or even")
     if(i % 2 == 0) {
-        return "even";
+        console.log(even);
     } else {
-        return "odd";
+        console.log(odd);
     }
 
 }
