@@ -6,4 +6,3 @@ function areaTri(side1, side2, side3) {
     return area;
 }
 
-areaTri(3, 4, 5);

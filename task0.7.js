@@ -12,3 +12,4 @@ function farenToCel(farenheit) {
     return celsius;
 }
 
+farenToCel(0);
