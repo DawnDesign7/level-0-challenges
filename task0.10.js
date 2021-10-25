@@ -1,16 +1,12 @@
 function findCommonChars(word1, word2) {
-   let commonChars=[];
-   let count = 0;
-   const obj = word2.split("");
-   for(const str of word1) {
-      let indice = obj.findIndex(s => s === str);
-      if(indice >=0){
-         commonChars.push(obj.find(s => s === str));
-         count++
-         obj.splice(indice,1);
+   let commonChars = "";
+   for(let i = 0; i < word2.length; i++) {
+      if(word1.toLowerCase().includes(word2[i].toLowerCase())) {
+         commonChars += word2[i] + ", " ;
       }
    }
-console.log(commonChars);
+
+console.log("Common letters: " + commonChars);
 }
 
-findCommonChars("umuzi", "uvumilivu");
+findCommonChars("Umuzi", "Maji");
