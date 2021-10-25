@@ -1,15 +1,15 @@
 // Celsius to Farenheit
-function celToFaren(celsius) {
+function celsiusTofarenheit(celsius) {
     let farenheit = (celsius * 1.8) + 32;
-    return farenheit;
+    console.log(farenheit);
 }
 
-celToFaren(30);
+celsiusTofarenheit(0);
 
 // Farenheit to Celsius 
-function farenToCel(farenheit) {
+function farenheitToCelsius(farenheit) {
     let celsius = (farenheit -32) * 1.8;
-    return celsius;
+    console.log(celsius);
 }
 
-farenToCel(0);
+farenheitToCelsius(32);
