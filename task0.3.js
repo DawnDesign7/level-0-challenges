@@ -1,6 +1,5 @@
 function hello(name) {
-    var name = prompt("Insert your first name");
-    return ["Hello " + name + "!"];
+    console.log("Hello " + name + "!");
 }
 
-hello();
+hello("Dawn");
