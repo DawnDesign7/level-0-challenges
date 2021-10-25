@@ -1,11 +1,10 @@
 function numToTime(num) {
-    var num = prompt("Insert number to convert it into hours and minutes");
-    var averHours = num/60;
-    var hours = Math.floor(averHours);
-    var averMinutes = (averHours - hours) * 60;
-    var minutes = Math.round(averMinutes);
+    let averHours = num/60;
+    let hours = Math.floor(averHours);
+    let averMinutes = (averHours - hours) * 60;
+    let minutes = Math.round(averMinutes);
 
-    return num +" equals " + hours + " hour(s) and " + minutes +" minute(s)."
+    console.log(num +" will become " + hours + " hour(s) and " + minutes +" minute(s).");
 }
 
-numToTime();
+numToTime(72);
