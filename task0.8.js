@@ -4,7 +4,7 @@ function numToTime(num) {
     let averMinutes = (averHours - hours) * 60;
     let minutes = Math.round(averMinutes);
 
-    console.log(num +" will become " + hours + " hour(s) and " + minutes +" minute(s).");
+    console.log(num +" will become " + "\"" +hours + "hour(s), " + minutes +" minute(s).");
 }
 
 numToTime(72);
