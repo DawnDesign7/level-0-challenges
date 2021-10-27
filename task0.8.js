@@ -4,7 +4,7 @@ function numToTime(num) {
     let averMinutes = (averHours - hours) * 60;
     let minutes = Math.round(averMinutes);
     
-    if (hours < 1 && minutes < 60) {
+    if (hours < 1 && minutes < 60 && minutes > 1) {
         console.log( minutes + " minutes.")
     } else if(hours ===1 && minutes ===1) {
         console.log(hours + " hour, " + minutes + " minute.")
@@ -12,8 +12,10 @@ function numToTime(num) {
         console.log(hours + " hours, " + minutes + " minutes.")
     } else if(hours > 1 && minutes ===1) {
         console.log(hours + " hours, " + minutes + " minute.")
-    } else if( hours ===1 && minutes > 1) {
+    } else if(hours ===1 && minutes > 1) {
         console.log(hours + " hour, " + minutes + " minutes.")
+    } else if(hours < 1 && minutes === 1) {
+        console.log(minutes + " minute.")
     } 
 }
 
