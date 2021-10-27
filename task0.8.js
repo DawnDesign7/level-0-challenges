@@ -16,7 +16,11 @@ function numToTime(num) {
         console.log(hours + " hour, " + minutes + " minutes.")
     } else if(hours < 1 && minutes === 1) {
         console.log(minutes + " minute.")
-    } 
+    } else if(hours > 1 && minutes < 1) {
+        console.log(hours + " hours.")
+    } else {
+        console.log(hours + " hour.")
+    }
 }
 
-numToTime(64);
+numToTime(60);
