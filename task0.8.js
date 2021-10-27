@@ -3,8 +3,18 @@ function numToTime(num) {
     let hours = Math.floor(averHours);
     let averMinutes = (averHours - hours) * 60;
     let minutes = Math.round(averMinutes);
-
-    console.log(num +" will become " + "\"" +hours + "hour(s), " + minutes +" minute(s).");
+    
+    if (hours < 1 && minutes < 60) {
+        console.log( minutes + " minutes.")
+    } else if(hours ===1 && minutes ===1) {
+        console.log(hours + " hour, " + minutes + " minute.")
+    } else if(hours > 1 && minutes > 1) {
+        console.log(hours + " hours, " + minutes + " minutes.")
+    } else if(hours > 1 && minutes ===1) {
+        console.log(hours + " hours, " + minutes + " minute.")
+    } else if( hours ===1 && minutes > 1) {
+        console.log(hours + " hour, " + minutes + " minutes.")
+    } 
 }
 
-numToTime(72);
+numToTime(64);
