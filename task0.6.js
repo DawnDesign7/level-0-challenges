@@ -8,7 +8,7 @@ function maxNumber(num1, num2, num3,) {
         } else {
             largestNumber = num3;
         }
-    console.log(largestNumber);
+    return largestNumber;
 }  
 
 maxNumber(7,1,9);
