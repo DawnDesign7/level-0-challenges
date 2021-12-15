@@ -1,12 +1,12 @@
-function findCommonChars(word1, word2) {
-   let commonChars = "";
+function findCommonCharacters(word1, word2) {
+   let commonCharacters = "";
    for(let i = 0; i < word2.length; i++) {
       if(word1.toLowerCase().includes(word2[i].toLowerCase())) {
-         commonChars += word2[i] + ", " ;
+         commonCharacters += word2[i] + ", " ;
       }
    }
 
-console.log("Common letters: " + commonChars);
+console.log("Common letters: " + commonCharacters);
 }
 
-findCommonChars("Umuzi", "Maji");
+findCommonCharacters("Umuzi", "Maji");
